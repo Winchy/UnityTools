@@ -43,10 +43,10 @@ public class ObjectAlignment : EditorWindow {
 
 		AlignAction action = AlignAction.None;
 
-		if (GUILayout.Button("Align To the minimum")) action = AlignAction.ToMinimum;
-        if (GUILayout.Button("Align To the maximum")) action = AlignAction.ToMaximum;
-        if (GUILayout.Button("Align To the middle")) action = AlignAction.ToMiddle;
-        if (GUILayout.Button("Distribute")) action = AlignAction.Distribute;
+		if (GUILayout.Button("向最小值对齐")) action = AlignAction.ToMinimum;
+        if (GUILayout.Button("向最大值对齐")) action = AlignAction.ToMaximum;
+        if (GUILayout.Button("向中间值对齐")) action = AlignAction.ToMiddle;
+        if (GUILayout.Button("均匀排布")) action = AlignAction.Distribute;
 
         if (Input.GetKeyUp(KeyCode.Z))
         {
